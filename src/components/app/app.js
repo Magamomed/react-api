@@ -6,8 +6,8 @@ import RandomPlanet from '../random-planet';
 import './app.css';
 
 import ErrorBoundry from "../error-boundry";
-import SwapiService from "../../services/swapi-service";
-import DummySwapiService from "../../services/dummy-swapi-service";
+import SwapiService from "../service/swapi-service";
+import DummySwapiService from "../service/dummy-swapi-service";
 import {SwapiServiceProvider} from "../swapi-service-context";
 import {PeoplePage, PlanetsPage, StarshipsPage} from '../pages';
 

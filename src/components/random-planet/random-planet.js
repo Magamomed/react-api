@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import SwapiService from '../../services/swapi-service';
+import SwapiService from "../service/swapi-service";
 import PropTypes from 'prop-types';
 import Spinner from '../spinner';
 import ErrorIndicator from "../error-indicator";
@@ -72,7 +72,8 @@ const PlanetView = ({planet}) => {
     return (
         <React.Fragment>
             <img className="planet-image"
-                 src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`} />
+                 src={`https://starwars-visualguide.com/assets/img/planets/${id}.jpg`} 
+                 alt="" />
             <div>
                 <h4>{name}</h4>
                 <ul className="list-group list-group-flush">
